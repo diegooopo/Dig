@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubya - Servidor de Minecraft</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #2c5364);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 2em;
+      color: #00c6ff;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .ip {
+      background: #1b262c;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+      background: #00c6ff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0099cc;
+    }
+    ul {
+      font-size: 1.1em;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Rubya 🎮</h1>
+    <p>Servidor de Minecraft Bedrock (PC, celular e Xbox) – 24h online!</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Sobre o servidor</h2>
+      <p>
+        Bem-vindo ao <b>Rubya</b>, um servidor de Minecraft feito para oferecer diversão e desafios a todos os jogadores! Aqui você encontrará um ambiente justo, uma comunidade amigável e oportunidades de criar, explorar e batalhar com estilo. Nosso servidor possui lobbies preparados, eventos regulares e sistemas que garantem uma experiência divertida e envolvente para todos. Venha se juntar à comunidade e aproveitar cada momento!
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Regras principais</h2>
+      <ul>
+        <li>🚫 Sem hacks: nada de cheats ou mods injustos.</li>
+        <li>🕵️‍♂️ Sem X-ray: não é permitido usar mods para ver recursos escondidos.</li>
+        <li>⚔️ Sem quit no PvP: não fuja das batalhas intencionalmente.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Informações do servidor</h2>
+      <div class="ip" id="serverInfo">
+        🌐 IP: <b>Rubyaserverrost.enderman.cloud</b><br>
+        🔑 Porta: <b>39218</b>
+      </div>
+      <button onclick="copyInfo()">📋 Copiar IP & Porta</button>
+    </div>
+  </div>
+
+  <script>
+    function copyInfo() {
+      const text = "IP: Rubyaserverrost.enderman.cloud | Porta: 39218";
+      navigator.clipboard.writeText(text);
+      alert("✅ IP e Porta copiados com sucesso!");
+    }
+  </script>
+</body>
+</html>
